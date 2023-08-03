@@ -1,0 +1,16 @@
+<launch>
+  <!-- Inicialização do Gazebo -->
+  <arg name="world_file" default="worlds/test.world" />
+  <arg name="gui" default="true" />
+  <arg name="verbose" default="true" />
+  <arg name="paused" default="true" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_file)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="verbose" value="$(arg verbose)" />
+  </include>
+
+  <!-- Adicione aqui outros elementos que você queira incluir, como robôs, sensores, atuadores, etc. -->
+
+</launch>
